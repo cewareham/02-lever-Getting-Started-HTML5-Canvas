@@ -2,28 +2,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-	<title>HTML5 Games - Beginner to Pro - Section 2 - Video 5</title>
+	<title>HTML5 Games - Beginner to Pro - Video 2 - Part 6</title>
 	<script src="game.js"></script>
 	<script>
-        var supportsPassive = false;
-        try {
-          var opts = Object.defineProperty({}, 'passive', {
-            get: function() {
-              supportsPassive = true;
-            }
-          });
-          window.addEventListener("testPassive", null, opts);
-          window.removeEventListener("testPassive", null, opts);
-        } catch (e) {}
-        
 		document.addEventListener("DOMContentLoaded", function(event){
-			const game = new Game();
-			window.game = game;//For debugging
+			window.game = new Game();
 		});
 	</script>
 </head>
 
 <body>
-	<canvas id="game" width="460" height="320" style="border:1px solid #000000;"></canvas>
+	<canvas id="game" width="800" height="600" style="border:1px solid #000000;"></canvas>
 </body>
 </html>
